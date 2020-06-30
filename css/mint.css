@@ -245,7 +245,8 @@ body{font-family: 'Montserrat', sans-serif;}
 	position: absolute;
 	left: 0;
 	top: 0;
-	display: none;
+
+	opacity: 0;
 
 	padding: 115px 100px;
 
@@ -261,7 +262,8 @@ body{font-family: 'Montserrat', sans-serif;}
 }
 
 .artwork__hover__text:hover .artwork__text {
-	display: block;
+	opacity: 1;
+	transition: .5s;
 }
 
 
@@ -305,19 +307,100 @@ body{font-family: 'Montserrat', sans-serif;}
 
 /*ABOUT US*/
 
+.about__our__subtitle {
+	font-size: 15px;
+	color: rgb(30, 30, 30);
+	font-weight: bold;
+	line-height: 1;
+}
 
-
-
-.about {}
-.container {}
+.about {
+	margin-bottom: 120px;
+}
 .about__title {
 	margin-top: 130px;
 }
-.title {}
 .about__text {
 	margin: 75px 0;
 }
-.text {}
-.portfolio__row {}
-.about__portfolio__body {}
-.portfolio__text {}
+
+.portfolio__row {
+	display: flex;
+	justify-content: space-between;
+}
+
+.about__portfolio__position {
+	position: relative;
+	display: inline-block;
+}
+
+/**/
+.about__portfolio__block {
+	position: relative;
+	display: inline-block;
+}
+.about__portfolio__subtitle {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+
+	width: 250px;
+	height: 70px;
+
+	background: var(--yellow__button);
+}
+.about__portfolio__mame {
+	padding: 15px 0 11px 30px;
+}
+.about__portfolio__specialization {
+	padding: 0 0 11px 30px;
+
+	font-size: 12px;
+	color: rgb(255, 255, 255);
+	line-height: 1;
+}
+
+
+/*:HOVER PORTFOLIO*/
+
+.about__portfolio__more {
+	position: absolute;
+	top: 0;
+	left: 0;
+
+	opacity: 0;
+
+	padding: 55px;
+
+	transition: .6s;
+
+}
+
+.about__portfolio__block:hover .about__portfolio__more{
+	opacity: 1;
+
+	transition: .3s;
+	background-color: #f4f4f4;
+}
+
+.about__portfolio__more__title {
+	font-size: 20px;
+	color: rgb(30, 30, 30);
+	font-weight: bold;
+	line-height: 1;
+
+	margin: 55px 0 45px 0;
+}
+.about__portfolio__more__text {}
+.about__portfolio__more__button {
+	margin-top: 40px;
+	margin-bottom: 25px;
+	line-height: 1;
+}
+
+.about__portfolio__more__button a {
+	font-size: 12px;
+	color: rgb(30, 30, 30);
+}
+
+
