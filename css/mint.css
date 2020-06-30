@@ -1,0 +1,323 @@
+*{ 
+	box-sizing: border-box;
+}
+
+ul,
+ol {
+	list-style: none; 
+	padding: 0;
+}
+
+html, body{
+	height: 100%;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	line-height: 1;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {margin: 0;}
+img{max-width: 100%;display: block;}
+a{display: block; text-decoration: none;}
+input, button, textarea, select {font: inherit;}
+
+body{font-family: 'Montserrat', sans-serif;}
+
+
+:root{ 
+	--yellow__button: #FFE100FF;
+	--yellow__button__hover: #FFFA00;
+	--grey__background: #F4F4F4;
+ }
+
+/*Container*/
+
+.container {
+	max-width: 1170px;
+	margin: 0px auto;
+}
+
+/*Styles*/
+
+.title {
+	font-size: 60px;
+	color: rgb(30, 30, 30);
+	font-weight: bold;
+	line-height: 1.333;
+}
+.text {
+	font-size: 12px;
+	font-weight: bold;
+	color: rgb(0, 0, 0);
+	line-height: 2.5;
+}
+.button {
+	padding: 1.5em;
+	font-size: 16px;
+	color: rgb(30, 30, 30);
+	background: var(--yellow__button);
+	line-height: .8;
+	cursor: pointer;
+	text-transform: uppercase;
+	border: none;
+	outline: none;
+}
+.button:hover{
+	background: var(--yellow__button__hover);
+	transition: .2s;
+}
+
+
+
+
+/*Header*/
+
+
+
+
+.header__background{
+	background: var(--yellow__button);
+	width: 100%;
+}
+
+.header__top__row {
+	max-width: 1170px;
+	margin-top: 35px;
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 155px;
+}
+.header__menu {
+	flex: 0 0 40%;
+	display: flex;
+	justify-content: space-between;
+	list-style: none;
+}
+
+/*Header__Menu*/
+
+
+.header__menu a{
+	font-size: 18px;
+	color: rgb(30, 30, 30);
+	padding: 1em;
+	text-transform: uppercase;
+}
+.header__menu a:hover{
+	color: #fff;
+	transition: .2s;
+}
+
+/*Header__Main*/
+
+
+.header__main__row {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 245px;
+}
+.header__body {
+}
+.header__title {
+	margin-bottom: 45px;
+}
+.header__text {
+	margin-bottom: 45px;
+}
+.header__button {
+
+}
+
+/*Header__Main__Image*/
+
+.header__image {
+	margin-left: 45px;
+	min-width: 571px;
+}
+.header__image img{
+	width: 100%;
+}
+
+
+
+
+/*Main*/
+
+
+
+
+.main {
+	margin-top: 125px;
+}
+
+/*Main Title*/
+
+.main__title {
+	-ms-text-align-last: left;
+	text-align-last: left;
+	margin-bottom: 70px;
+}
+
+/*Main Head*/
+
+.main__head {
+	display: flex;
+	justify-content: space-between;
+}
+.main__menu {
+	flex: 0 0 35%;
+	display: flex;
+	justify-content: space-between;
+}
+.main__menu a{
+	padding: 10px;
+	margin-bottom: 70px;
+
+	font-size: 18px;
+	color: rgb(30, 30, 30);
+	line-height: 1em;
+	text-transform: uppercase;
+
+	transition: .2s;
+}
+.main__menu a:hover{
+	background: var(--yellow__button);
+}
+.main__newest__search {
+	line-height: 1em;
+	padding: 10px;
+}
+.main__newest__search:after{
+	content: '';
+	background: url(../img/main__arrow__down.png) 0 .3em no-repeat;
+	padding-right: 20px;
+	margin-left: 15px;
+}
+
+/*Main Artworks Flex*/
+
+.main__artwork {
+	display: flex;
+	margin: -15px;
+}
+.main__artwork:last-child {
+	margin-right: 0;
+}
+.artwork__image__flex {
+	flex: 0 0 370px;
+	margin: 0 15px 15px;
+}
+.main__artwork img {
+	margin-bottom: 30px;
+}
+
+/*Artwork Text*/
+
+
+.artwork__hover__text {
+	position: relative;
+	display: inline-block;
+}
+
+.branding {
+	font-size: 12px;
+	color: rgb(30, 30, 30);
+	line-height: 6;
+}
+
+/*SMALL IMAGES*/
+
+
+.artwork__text {
+	position: absolute;
+	left: 0;
+	top: 0;
+	display: none;
+
+	padding: 115px 100px;
+
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 30px;
+	color: rgb(30, 30, 30);
+	font-weight: bold;
+
+	background: var(--yellow__button);
+	width: 100%;
+	height: calc(100% - 30px);
+}
+
+.artwork__hover__text:hover .artwork__text {
+	display: block;
+}
+
+
+/*BIG IMAGES*/
+
+
+.artwork__big__text{
+	padding: 220px 100px;
+}
+
+
+.main__button{
+	display: block;
+	margin: 65px auto;
+}
+
+
+
+
+/*PARTNERS*/
+
+
+
+
+.partners__background {
+	background: var(--grey__background);
+	width: 100%;
+}
+.container {}
+.work__showcase__row{
+	display: flex;
+	justify-content: space-between;
+	margin: 0 15px;
+}
+.partner__img {
+	margin: 130px 0;
+}
+
+
+
+
+/*ABOUT US*/
+
+
+
+
+.about {}
+.container {}
+.about__title {
+	margin-top: 130px;
+}
+.title {}
+.about__text {
+	margin: 75px 0;
+}
+.text {}
+.portfolio__row {}
+.about__portfolio__body {}
+.portfolio__text {}
