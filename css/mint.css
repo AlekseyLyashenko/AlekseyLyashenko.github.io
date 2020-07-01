@@ -147,9 +147,10 @@ body{font-family: 'Montserrat', sans-serif;}
 	margin-left: 45px;
 	min-width: 571px;
 }
-.header__image img{
+.header__image img {
 	width: 100%;
 }
+
 
 
 
@@ -334,7 +335,6 @@ body{font-family: 'Montserrat', sans-serif;}
 	display: inline-block;
 }
 
-/**/
 .about__portfolio__block {
 	position: relative;
 	display: inline-block;
@@ -404,3 +404,29 @@ body{font-family: 'Montserrat', sans-serif;}
 }
 
 
+/*BLOG*/
+
+
+
+.blog {}
+.blog__background {
+	background: var(--grey__background);
+	padding-top: 130px;
+}
+.container {}
+.blog__title {
+	margin-bottom: 70px;
+}
+.title {}
+.blog__text {
+	margin-bottom: 70px;
+}
+.text {}
+.blog__row {}
+.blog__row__block {}
+.blog__image {}
+.blog__image__hover {}
+.blog__body {}
+.blog__subtitle {}
+.about__our__subtitle {}
+.blog__date {}
