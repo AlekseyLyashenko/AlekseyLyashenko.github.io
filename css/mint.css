@@ -145,10 +145,12 @@ body{font-family: 'Montserrat', sans-serif;}
 
 .header__image {
 	margin-left: 45px;
-	min-width: 571px;
+/*	min-width: 571px;*/
+width: 100%;
 }
 .header__image img {
-	width: 100%;
+	max-width: 100%;
+
 }
 
 
@@ -260,6 +262,8 @@ body{font-family: 'Montserrat', sans-serif;}
 	background: var(--yellow__button);
 	width: 100%;
 	height: calc(100% - 30px);
+
+	transition: .5s;
 }
 
 .artwork__hover__text:hover .artwork__text {
@@ -339,6 +343,10 @@ body{font-family: 'Montserrat', sans-serif;}
 	position: relative;
 	display: inline-block;
 }
+.about__portfolio__block:hover .about__portfolio__subtitle {
+	opacity: 0;
+	transition: .3s;
+}
 .about__portfolio__subtitle {
 	position: absolute;
 	bottom: 0;
@@ -346,6 +354,8 @@ body{font-family: 'Montserrat', sans-serif;}
 
 	width: 250px;
 	height: 70px;
+
+	transition: .3s;
 
 	background: var(--yellow__button);
 }
@@ -370,7 +380,7 @@ body{font-family: 'Montserrat', sans-serif;}
 
 	opacity: 0;
 
-	padding: 55px;
+	padding: 55px 55px 50px 55px;
 
 	transition: .6s;
 
@@ -380,7 +390,7 @@ body{font-family: 'Montserrat', sans-serif;}
 	opacity: 1;
 
 	transition: .3s;
-	background-color: #f4f4f4;
+	background-color: rgba(244, 244, 244, .8);
 }
 
 .about__portfolio__more__title {
@@ -413,20 +423,83 @@ body{font-family: 'Montserrat', sans-serif;}
 	background: var(--grey__background);
 	padding-top: 130px;
 }
-.container {}
+
 .blog__title {
 	margin-bottom: 70px;
 }
-.title {}
+
 .blog__text {
 	margin-bottom: 70px;
 }
 .text {}
-.blog__row {}
+.blog__row {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: space-between;
+	padding-bottom: 150px;
+}
 .blog__row__block {}
-.blog__image {}
-.blog__image__hover {}
-.blog__body {}
-.blog__subtitle {}
+
+/*IMAGE HOVER*/
+
+.blog__image {
+	display: inline-block;
+	position: relative;
+}
+.blog__image:hover .blog__image__hover{
+	opacity: 1;
+	background-color: rgba(255, 225, 0, 0.6);
+	transition: .3s;
+}
+.blog__image__hover {
+	position: absolute;
+	left: 0;
+	top: 0;
+
+	padding: 130px 0 0 100px;
+
+	opacity: 0;
+
+	transition: .5s;
+
+	width: 100%;
+	height: 100%;
+
+}
+.blog__image__hover a {
+	font-size: 30px;
+	color: rgb(30, 30, 30);
+	font-weight: bold;
+	line-height: 1;
+}
+
+.blog__body {
+	margin-top: 32px;
+	padding-left: 20px;
+}
+.blog__subtitle {
+	padding-left: 5px;
+}
 .about__our__subtitle {}
-.blog__date {}
+.blog__subtext {
+	margin-top: 35px;
+}
+.blog__date {
+	margin-top: 30px;
+	padding-left: 5px;
+}
+
+
+
+
+/*CONTACT US*/
+
+
+
+
+
+
+
